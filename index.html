@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>CALCULATOR-v.1</header>
+    <section id="section">
+        <div>
+            <input type="text" id="console"/>
+        </div>
+        
+        <table>
+            <tr>
+                <td>
+                    <button type="button" value="(" onclick="display(this)">(</button>
+                    <button type="button" value=")" onclick="display(this)">)</button>
+                    <button type="button" value="√" disabled>√</button>
+                    <button type="button" value="" disabled>x²</button>
+                    <button type="button" value="^" onclick="display(this)">^</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="7" onclick="display(this)">7</button>
+                    <button type="button" value="8" onclick="display(this)">8</button>
+                    <button type="button" value="9" onclick="display(this)">9</button>
+                    <button type="button" value="" onclick="del()">DEL</button>
+                    <button type="button" value="" onclick="clr()">AC</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="4" onclick="display(this)">4</button>
+                    <button type="button" value="5" onclick="display(this)">5</button>
+                    <button type="button" value="6" onclick="display(this)">6</button>
+                    <button type="button" value="*" onclick="display(this)">×</button>
+                    <button type="button" value="/" onclick="display(this)">÷</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="1" onclick="display(this)">1</button>
+                    <button type="button" value="2" onclick="display(this)">2</button>
+                    <button type="button" value="3" onclick="display(this)">3</button>
+                    <button type="button" value="+" onclick="display(this)">+</button>
+                    <button type="button" value="-" onclick="display(this)">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="0" onclick="display(this)">0</button>
+                    <button type="button" value="." onclick="display(this)">.</button>
+                    <button type="button" value="." onclick="eval()">π</button>
+                    <button type="button" value="0" onclick="display(this)" id="answer">Ans</button>
+                    <button type="button" value="." onclick="eval()">=</button>
+                </td>
+            </tr>
+        </table>             
+    </section>
+    <footer>
+        <h6>created by Nityananda Adhikary</h6>
+    </footer>
+</body>
+</html>
