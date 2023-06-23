@@ -10,20 +10,20 @@
     <script src="./script.js"></script>
 </head>
 <body>
-    <header>CALCULATOR-v.1</header>
+    <header></header>
     <section id="section">
-        <div>
-            <input type="text" id="console"/>
-        </div>
-        
+        <label for="console">Backlit Calculator - v.1</label>
+        <input type="text" id="console"/>
         <table>
             <tr>
                 <td>
                     <button type="button" value="(" onclick="display(this)">(</button>
                     <button type="button" value=")" onclick="display(this)">)</button>
-                    <button type="button" value="√" disabled>√</button>
-                    <button type="button" value="" disabled>x²</button>
                     <button type="button" value="^" onclick="display(this)">^</button>
+                    <!-- <button type="button" value="√" disabled>√</button> -->
+                    <!-- <button type="button" value="" disabled>x²</button> -->
+                    <button type="button" value="" onclick="window.location.href='https://www.linkedin.com/in/nityananda00/';"><i class="fa fa-linkedin-square"></i></button>
+                    <button type="button" value="" onclick="window.location.href='https://github.com/NityaNandaDPG';"><i class="fa fa-github"></i></button>
                 </td>
             </tr>
             <tr>
@@ -32,7 +32,7 @@
                     <button type="button" value="8" onclick="display(this)">8</button>
                     <button type="button" value="9" onclick="display(this)">9</button>
                     <button type="button" value="" onclick="del()">DEL</button>
-                    <button type="button" value="" onclick="clr()">AC</button>
+                    <button type="button" value="" onclick="clr()" id="ac">AC</button>
                 </td>
             </tr>
             <tr>
@@ -57,15 +57,12 @@
                 <td>
                     <button type="button" value="0" onclick="display(this)">0</button>
                     <button type="button" value="." onclick="display(this)">.</button>
-                    <button type="button" value="." onclick="eval()">π</button>
+                    <button type="button" value="3.14159265359" onclick="display(this)">π</button>
                     <button type="button" value="0" onclick="display(this)" id="answer">Ans</button>
                     <button type="button" value="." onclick="eval()">=</button>
                 </td>
             </tr>
         </table>             
     </section>
-    <footer>
-        <h6>created by Nityananda Adhikary</h6>
-    </footer>
 </body>
 </html>
